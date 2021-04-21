@@ -1,0 +1,11 @@
+.main-div mat-card {
+    padding: 0px;
+}
+.login-form {
+    padding: 20px;
+}
+
+.mess {
+    text-align: center;
+    color: red;
+}

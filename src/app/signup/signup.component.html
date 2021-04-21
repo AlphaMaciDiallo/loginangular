@@ -1,0 +1,35 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="25">
+        <mat-toolbar color="primary" fxLayoutAlign="center center">Sign Up</mat-toolbar>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="login-form" (submit)="signup()">
+            <mat-form-field >
+              <input matInput placeholder="Name" minlength="4" name="name" [(ngModel)]="name">
+            </mat-form-field>
+
+            <mat-form-field >
+                <input matInput placeholder="Email" minlength="4" name="email" [(ngModel)]="email">
+            </mat-form-field>
+            
+            <mat-form-field >
+                <input matInput placeholder="Password" minlength="4" name="password" [(ngModel)]="password">
+            </mat-form-field>
+            
+            <!-- <mat-form-field >
+                <input matInput placeholder="Username" minlength="4" name="username" [(ngModel)]="username">
+            </mat-form-field>
+
+            <mat-form-field >
+                <input matInput placeholder="Username" minlength="4" name="username" [(ngModel)]="username">
+            </mat-form-field> -->
+
+            <mat-form-field >
+                <input matInput placeholder="Initial-Paiement (1000 GHS)" minlength="4" name="paidfees" [(ngModel)]="paidfees">
+            </mat-form-field>
+
+            <button color="primary" mat-raised-button type="submit">SignUp</button>
+        </form>  
+        <br>
+        <p style="text-align:center">Already have an account click <a routerLink="">here</a> !!! </p> 
+        <br>
+    </mat-card>
+</div>
